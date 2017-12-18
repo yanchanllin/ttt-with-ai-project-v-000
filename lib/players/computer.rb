@@ -1,7 +1,6 @@
-require 'pry'
 module Players
   class Computer < Player
-  
+
     def move(board)
       Game::WIN_COMBINATIONS.detect do |array|
         if board.cells[array[0]] == board.cells[array[1]]
