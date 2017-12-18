@@ -54,7 +54,7 @@ class Board
 
   def valid_move?(input)
     index = input.to_i-1
-    index.between?(1,9) && !taken?(input)
+    index.between?(0,8) && !taken?(input)
   end
 
   def update(index, current_player = "X")
