@@ -5,5 +5,5 @@ puts "Hi! Welcome to Tic Tac Toe!"
 puts "Do you want to play, 0,1, or 2 player?"
 player_1= gets.strip
 initialize(player_1 = Players::Human.new("X"), player_2 = Players::Human.new("O"), board = Board.new)
-new_game = TicTacToe.new
+new_game = game.new
 new_game.play
